@@ -44,4 +44,22 @@ print()
 print("sum of negative numbers {}, sum of even numbers {}, sum of odd numbers {}, product of multiples of 3 {}, product\
 between minimum and maximum {}, sum between positiv {}".format(sum_neg_numbers,sum_even_numbers,sum_odd_numbers,\
 product_numbers, product_numbers1, sum_numbers))
-
+# task 2
+list_even_numbers = []
+list_odd_numbers = []
+list_negativ_numbers = []
+list_posetive_numbers = []
+for i in range(10):
+    numbers.append(randint(-10, 10))
+    print(numbers[i], end=" ")
+    if numbers[i] % 2 == 0:
+        list_even_numbers.append(numbers[i])
+    else:
+        list_odd_numbers.append(numbers[i])
+    if numbers[i] > 0:
+        list_posetive_numbers.append(numbers[i])
+    else:
+        list_negativ_numbers.append(numbers[i])
+print()
+print("List even numbers: {}\nList odd numbers: {}\nList posetive numbers: {}\nList negative numbers: {}\n".format(
+    list_even_numbers, list_odd_numbers, list_posetive_numbers, list_negativ_numbers))
